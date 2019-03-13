@@ -64,6 +64,10 @@ class Zura extends Humanoid {
         return 'he thinks Im a bigger asshole than he is and he feel sad that he lost the 1st place'
       case 'luis':
         return 'dont run much tonight'
+      case 'liew":
+        return 'utter silence'
+      case 'liew & erik':
+        return 'delegate to erik'
       default:
         const GENERIC_REPLIES = [
           'nah',
