@@ -6,6 +6,8 @@
 import { Humanoid } from 'universe'
 import { SEATS } from 'classroom'
 import { Erik, Wassim, Trisha } from './friends.js'
+import { NONE } from './love-intrests.js'
+
 
 const NATURAL_HABITAT = ['Skillman Cafe', 'Lower Corner']
 
@@ -68,6 +70,10 @@ class Zura extends Humanoid {
         return 'utter silence'
       case 'liew & erik':
         return 'delegate to erik'
+      case 'russia':
+        return: 'fack u not funny'
+      case 'erik & wassim?':
+        return 'i dont know about those dumbasses'
       default:
         const GENERIC_REPLIES = [
           'nah',
