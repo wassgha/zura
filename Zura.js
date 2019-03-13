@@ -60,13 +60,21 @@ class Zura extends Humanoid {
         return 'nah'
       case 'lib?':
         return 'yea'
+      case 'wassim':
+        return 'he thinks Im a bigger asshole than he is and he feel sad that he lost the 1st place'
+      case 'luis':
+        return 'dont run much tonight'
       default:
         const GENERIC_REPLIES = [
           'nah',
           'what zi fack',
           'fack me',
           'whats zi question',
-          'youre a dumbass'
+          'youre a dumbass',
+          'nah, got stuff  to do',
+          'I play on Fridays at 6ish',
+          'nah, dont think so',
+          'u kidding ?'
         ]
         return GENERIC_REPLIES[Math.floor(Math.random() * GENERIC_REPLIES.length)]
     }
