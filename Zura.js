@@ -5,7 +5,8 @@
 
 import { Humanoid } from 'universe'
 import { SEATS } from 'classroom'
-import { Erik, Wassim, Trisha } from './friends.js'
+import { Erik, Wassim, Trisha } from './friends'
+import { Georgian, English, Russian } from 'language'
 
 const NATURAL_HABITAT = ['Skillman Cafe', 'Lower Corner']
 
@@ -40,6 +41,11 @@ class Zura extends Humanoid {
      * when Enya sings
      */
     this.playlist = [...require('movies/soundtracks.js')]
+    
+    /**
+     * @explanation Zura never uses grammatical articles in his sentences
+     */
+    this.dictionary = {... Georgian, ... Russian, ... English.filter(word => !word.isArticle) }
 
     /**
      * @explanation Zura does not order on his own in restaurants, he waits
