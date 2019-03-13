@@ -66,10 +66,6 @@ class Zura extends Humanoid {
         return 'he thinks Im a bigger asshole than he is and he feel sad that he lost the 1st place'
       case 'luis':
         return 'dont run much tonight'
-      case 'liew":
-        return 'utter silence'
-      case 'liew & erik':
-        return 'delegate to erik'
       case 'russia':
         return: 'fack u not funny'
       case 'erik & wassim?':
@@ -91,6 +87,16 @@ class Zura extends Humanoid {
         return GENERIC_REPLIES[Math.floor(Math.random() * GENERIC_REPLIES.length)]
     }
   }
+  
+  function automated situtional_actionator(situation, available_hosts) {
+    switch (situation) {
+      case 'liew?':
+        if available_hosts.includes('erik') {
+          return 'delegate to erik'
+        }
+        return 'utter silence'
+  return 'NEED A DEFAULT RESPONE';             // Function returns the product of a and b
+}
 
   /**
    * @explanation Zura does not order on his own in restaurants, he waits
