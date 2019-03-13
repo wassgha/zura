@@ -6,6 +6,8 @@
 import { Humanoid } from 'universe'
 import { SEATS } from 'classroom'
 import { Erik, Wassim, Trisha } from './friends.js'
+import { NONE } from './love-intrests.js'
+
 
 const NATURAL_HABITAT = ['Skillman Cafe', 'Lower Corner']
 
@@ -60,17 +62,41 @@ class Zura extends Humanoid {
         return 'nah'
       case 'lib?':
         return 'yea'
+      case 'wassim':
+        return 'he thinks Im a bigger asshole than he is and he feel sad that he lost the 1st place'
+      case 'luis':
+        return 'dont run much tonight'
+      case 'russia':
+        return: 'fack u not funny'
+      case 'erik & wassim?':
+        return 'i dont know about those dumbasses'
       default:
         const GENERIC_REPLIES = [
           'nah',
           'what zi fack',
           'fack me',
           'whats zi question',
-          'youre a dumbass'
+          'youre a dumbass',
+          'nah, got stuff  to do',
+          'I play on Fridays at 6ish',
+          'nah, dont think so',
+          'u kidding ?',
+          'I went earlier today',
+          'I got some work to do man',
         ]
         return GENERIC_REPLIES[Math.floor(Math.random() * GENERIC_REPLIES.length)]
     }
   }
+  
+  function automated situtional_actionator(situation, available_hosts) {
+    switch (situation) {
+      case 'liew?':
+        if available_hosts.includes('erik') {
+          return 'delegate to erik'
+        }
+        return 'utter silence'
+  return 'NEED A DEFAULT RESPONE';             // Function returns the product of a and b
+}
 
   /**
    * @explanation Zura does not order on his own in restaurants, he waits
