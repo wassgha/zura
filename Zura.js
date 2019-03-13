@@ -74,7 +74,9 @@ class Zura extends Humanoid {
           'nah, got stuff  to do',
           'I play on Fridays at 6ish',
           'nah, dont think so',
-          'u kidding ?'
+          'u kidding ?',
+          'I went earlier today',
+          'I got some work to do man',
         ]
         return GENERIC_REPLIES[Math.floor(Math.random() * GENERIC_REPLIES.length)]
     }
